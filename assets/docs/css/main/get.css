@@ -1,0 +1,60 @@
+/* Main Configuration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+::selection {
+    color: #f69197;
+    background: #5b5d70;
+    background-color: #5b5d70;
+    background-blend-mode: color;
+    -webkit-background-blend-mode: color;
+    filter: none;
+    -webkit-filter: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    -webkit-appearance: none;
+}
+span::selection {
+    color: white;
+}
+::-moz-selection {
+    color: #f69197;
+    background: #5b5d70;
+}
+span::-moz-selection {
+    color: white;
+}
+img {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+body {
+    color: #5b5d70;
+    background: #282d3c;
+    overflow-x: hidden;
+}
+
+/* Header */
+header, #headerReplace {
+    width: 100%;
+    height: 50px;
+    padding: 0 50px;
+    z-index: 1000;
+}
+header {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f69197;
+}

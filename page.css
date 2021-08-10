@@ -1,0 +1,127 @@
+/* Main */
+main p {
+    margin-top: 40px;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #74838c;
+}
+main .fullSpaceBetween {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+main .fullSpaceBetween h2 {
+    font-size: 190px;
+    line-height: 180px;
+    color: #ffc4b8;
+}
+main #introduction {
+    min-height: 400px;
+    height: 60vh;
+}
+main #introduction #personImage {
+    min-height: 350px;
+    min-width: 350px;
+    position: relative;
+}
+main #introduction img {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+main #introduction #personImage .shadow {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 5px 0 10px black inset;
+}
+main a {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+main a:hover {
+    opacity: 0.8;
+}
+main span {
+    color: #FFFFFF;
+}
+#cursor {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    pointer-events: none;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    -khtml-backdrop-filter: blur(3px);
+    -o-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.05));
+    transform: translateX(-30px) translateY(-30px);
+}
+main p {
+    padding-bottom: 50px;
+}
+@media screen and (min-width: 0px) {
+    header h1 .full {
+        display: none;
+    }
+    header h1 .short {
+        display: flex;
+    }
+
+    main section {
+        padding: 0 50px 0 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    #introduction .fullSpaceBetween {
+        flex-direction: column;
+    }
+    #introduction #personImage {
+        margin-top: 20px;
+    }
+
+    #cursor {
+        display: none;
+    }
+}
+@media screen and (min-width: 700px) {
+    header h1 .full {
+        display: flex;
+    }
+    header h1 .short {
+        display: none;
+    }
+}
+@media screen and (min-width: 860px) {
+    main section {
+        padding: 50px 50px 0 50px;
+    }
+
+    #introduction .fullSpaceBetween {
+        flex-direction: row;
+    }
+    #introduction #personImage {
+        margin-top: 0;
+    }
+
+    #cursor {
+        display: flex;
+    }
+}

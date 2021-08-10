@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- code made BY JORIT VÁSCONEZ GERLACH -->
+<!-- website jorit.vasconezgerlach.de -->
+<!-- instagram @jorit.vasconezgerlach -->
+<!-- hope you like it :) -->
+<html lang="en">
+    <head>
+        <!-- SEO -->
+        <title>Julian Markus | JuMa</title>
+        <meta name="description" content="">
+        <meta name="robots" content="index,follow,noarchive">
+        <!-- Link -->
+        <link rel="stylesheet" href="assets/docs/css/main/get.css?v1.1">
+        <link rel="stylesheet" href="page.css?v1.1">
+        <!-- Other -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1><span class="full">Julian Markus</span><span class="short">JuMa</span></h1>
+        </header>
+        <main>
+            <section id="headerReplace"></section>
+            <section id="introduction" style="margin-top: 70px;">
+                <div class="fullSpaceBetween">
+                    <h2>THIS IS ME</h2>
+                    <div id="personImage">
+                        <div id="gridOverlay" class="gridOverlay">
+                            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <img src="assets/imgs/thispersondoesnotexist.png" alt="Julian Markus Fake Person">
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor <span>sit amet</span> consectetur adipisicing elit. Vitae exercitationem debitis consectetur quam, blanditiis perspiciatis <span>consequuntur</span> expedita <span>laboriosam</span> explicabo iure excepturi molestiae ipsa, maxime facere tenetur alias iusto laborum labore omnis est dolores rerum! Quibusdam, aspernatur, debitis quaerat <span>perspiciatis</span> reiciendis commodi blanditiis iure, <span>dignissimos eius odit</span> alias excepturi optio delectus. Reiciendis voluptates.</p>
+            </section>
+            <div id="cursor"></div>
+        </main>
+        <footer></footer>
+    </body>
+    <script>
+        var personImage = document.getElementById('personImage');
+        const cursor = document.getElementById('cursor');
+        const blur = document.getElementById('gridOverlay');
+
+        document.addEventListener('mousemove', (e) => {
+            console.log(e.pageX, e.pageY);
+            cursor.style.left = e.pageX+'px';
+            cursor.style.top = e.pageY+'px';
+        });
+        document.addEventListener('mouseout', () => {
+            console.log('Out');
+        });
+    </script>
+</html>
